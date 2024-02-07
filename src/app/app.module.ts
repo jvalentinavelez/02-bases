@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
+import { BdzModule } from './bdz/bdz.module';
+import { HeroesModule } from './heroes/heroes.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroresModule } from './heroes/heroes.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { HeroresModule } from './heroes/heroes.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeroresModule,
+    HeroesModule,
+    BdzModule,
   ],
   providers: [
     provideClientHydration()
