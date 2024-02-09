@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/02-bases/browser ./docs -f",
+    "copy:dist": "copyfiles dist/02-bases/browser/* ./docs -f",
     "serve:ssr:02-bases": "node dist/02-bases/server/server.mjs"
   },
   "private": true,
